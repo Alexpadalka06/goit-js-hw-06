@@ -6,7 +6,9 @@ function validInput(event) {
   console.log(result);
   if (result.length === Number(inputLenght.dataset.length)) {
     input.classList.add("valid");
+    input.classList.remove("invalid");
   } else {
     input.classList.add("invalid");
+    input.classList.remove("valid");
   }
 }
